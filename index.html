@@ -1,70 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-    <title>HPCF Homepage</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/4.0/examples/product/"
-    />
-    <!-- Bootstrap core CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
-
-  <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Homepage</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="https://ttran293.github.io/rank-hpcf-visualization/">Gapminder</a>
-            <a class="nav-link" href="https://hpcfvizteam.nikolabura.com/">Grafana</a>
-          </nav>
-        </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Welcome to HPCF Homepage</h1>
-        <p class="lead">To view the visualization please select the option in the navigation bar.</p>
-        <p class="lead">
-          <a href="https://drive.google.com/drive/folders/1Vz6hq3oBKCJWN7KBKQad-u85ez_Y6YhT?usp=sharing" class="btn btn-lg btn-secondary">View our poster and paper</a>
-        </p>
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Visualization project for <a href="https://hpcf.umbc.edu/">UMBC High Performance Computing Facility (HPCF)</a>.</p>
-        </div>
-      </footer>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>HPCF Visualization Homepage</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">HPCF Homepage</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Goal & Motivation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#viz1">Gapminder Tools</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#viz2">Grafana</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-light bg-gradient text-dark">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Examining the Usage of the UMBC <br> High Performance Computing Facility </h1>
+                <p class="lead fw-bolder">CSMC 436 Data Visualization Project</p>
+                <a class="btn btn-lg btn-info" href="https://drive.google.com/drive/folders/1Tz2fHXfSZV-jGDpmnsHqnsV0Um7YHrjl?usp=sharing">Poster and Paper</a>
+            </div>
+        </header>
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Goal and Motivation</h2>
+                        <p class="lead">Our goals for this project are to create compelling visualizations that can provide insight into the usage patterns of the HPCF which can assist in the allocation of resources towards the facility and in determining future policies on this shared UMBC community resource.</p>
+                        <p class="lead fw-bolder ">In this project:</p>
+                        <ul>
+                            <li>We observe the clusters’ management and the usage recorded by SLURM for each month starting in January 2019.</li>
+                            <li>We look at how important events such as the COVID-19 pandemic and the addition of the CPU 2021 machine may have affected cluster usage.</li>
+                            <li>We generate visualizations for specific time ranges in the data to see if any previously unexplored trends or anomalies can be found.</li>
+                            <li>We construct a narrative for the HPCF usage datasets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services section-->
+        <section class="bg-light" id="viz1">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Overall CPU and GPU usage on taki created by Gapminder Tools</h2>
+                        <p class="lead">Animated visualizations of monthly CPU and GPU usage from January 2019 to October 2021.</p>
+                        <a class="btn btn-lg btn-info" href="https://ttran293.github.io/usage-hpcf/">View the visualizations</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section-->
+        <section id="viz2">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Overall usage dashboards created by Grafana</h2>
+                        <p class="lead">Filtered, cleaned, concatenated data that was imported into TimescaleDB, we created dashboards in Grafana to visualize it in a variety of ways. Please <a href = "mailto: ttran19@umbc.edu,akhan30@umbc.edu,akhan30@umbc.edu">contact us</a> for grafana account.</p>
+                        <a class="btn btn-lg btn-info" href="https://hpcfvizteam.nikolabura.com/">View the visualizations</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; HPCF Team 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
